@@ -1,9 +1,9 @@
 BUILD_CGO_ENABLED  := 0
-SERVICE_NAME       := go-whatsapp-multidevice-rest
-SERVICE_PORT       := 3000
-IMAGE_NAME         := go-whatsapp-multidevice-rest
+SERVICE_NAME       := go-whatsapp-multidevice
+SERVICE_PORT       := 3100
+IMAGE_NAME         := go-whatsapp-multidevice
 IMAGE_TAG          := latest
-REBASE_URL         := "github.com/dimaskiddo/go-whatsapp-multidevice-rest"
+REBASE_URL         := "github.com/vpnbazar/go-whatsapp-multidevice"
 COMMIT_MSG         := "update improvement"
 
 .PHONY:
@@ -70,7 +70,7 @@ commit:
 
 rebase:
 	rm -rf .git
-	find . -type f -iname "*.go*" -exec sed -i '' -e "s%github.com/dimaskiddo/go-whatsapp-multidevice-rest%$(REBASE_URL)%g" {} \;
+	find . -type f -iname "*.go*" -exec sed -i '' -e "s%github.com/vpnvazar/go-whatsapp-multidevice%$(REBASE_URL)%g" {} \;
 	git init
 	git remote add origin https://$(REBASE_URL).git
 
