@@ -50,7 +50,7 @@ docker run -d \
 
 #### **Using Pre-Build Binaries**
 
-1) Download Pre-Build Binaries from the [release page](https://github.com/vpnvazar/go-whatsapp-multidevice/releases)
+1) Download Pre-Build Binaries from the [release page](https://github.com/vpnbazar/go-whatsapp-multidevice/releases)
 
 2) Extract the zipped file
 
@@ -83,13 +83,13 @@ export GOPATH=$GOPATH:"`pwd`"
 
 2) Under the Go Workspace directory create a source directory
 ```sh
-mkdir -p src/github.com/vpnvazar/go-whatsapp-multidevice
+mkdir -p src/github.com/vpnbazar/go-whatsapp-multidevice
 ```
 
 3) Move to the created directory and pull codebase
 ```sh
-cd src/github.com/vpnvazar/go-whatsapp-multidevice
-git clone -b master https://github.com/vpnvazar/go-whatsapp-multidevice.git .
+cd src/github.com/vpnbazar/go-whatsapp-multidevice
+git clone -b master https://github.com/vpnbazar/go-whatsapp-multidevice.git .
 ```
 
 4) Run following command to pull vendor packages
@@ -143,13 +143,13 @@ Currently the test is not ready yet :)
 
 ## Authors
 
-* **Nasim Mohammad Raju** - *Initial Work* - [Vpnbazzar](https://github.com/vpnvazar)
+* **Nasim Mohammad Raju** - *Initial Work* - [Vpnbazar](https://github.com/vpnbazar)
 
-See also the list of [contributors](https://github.com/vpnvazar/go-whatsapp-multidevice/contributors) who participated in this project
+See also the list of [contributors](https://github.com/vpnbazar/go-whatsapp-multidevice/contributors) who participated in this project
 
 ## Annotation
 
-You can seek more information for the make command parameters in the [Makefile](https://github.com/vpnvazar/go-whatsapp-multidevice/-/raw/master/Makefile)
+You can seek more information for the make command parameters in the [Makefile](https://github.com/vpnbazar/go-whatsapp-multidevice/-/raw/master/Makefile)
 
 ## License
 
