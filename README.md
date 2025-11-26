@@ -39,18 +39,18 @@ Optional packages:
 2) Run the following command on your Terminal or PowerShell
 ```sh
 docker run -d \
-  -p 3000:3000 \
+  -p 3100:3100 \
   --name go-whatsapp-multidevice \
-  --rm dimaskiddo/go-whatsapp-multidevice-rest:latest
+  --rm vpnbazar/go-whatsapp-multidevice:latest
 ```
 
-3) Now it should be accessible in your machine by accessing `localhost:3000/api/v1/whatsapp` or `127.0.0.1:3000/api/v1/whatsapp`
+3) Now it should be accessible in your machine by accessing `localhost:3100/api/v1/whatsapp` or `127.0.0.1:3100/api/v1/whatsapp`
 
-4) Try to use integrated API docs that accesible in `localhost:3000/api/v1/whatsapp/docs/` or `127.0.0.1:3000/api/v1/whatsapp/docs/`
+4) Try to use integrated API docs that accesible in `localhost:3100/api/v1/whatsapp/docs/` or `127.0.0.1:3100/api/v1/whatsapp/docs/`
 
 #### **Using Pre-Build Binaries**
 
-1) Download Pre-Build Binaries from the [release page](https://github.com/dimaskiddo/go-whatsapp-multidevice-rest/releases)
+1) Download Pre-Build Binaries from the [release page](https://github.com/vpnvazar/go-whatsapp-multidevice/releases)
 
 2) Extract the zipped file
 
@@ -59,17 +59,17 @@ docker run -d \
 4) Run the pre-build binary
 ```sh
 # MacOS / Linux
-chmod 755 go-whatsapp-multidevice-rest
-./go-whatsapp-multidevice-rest
+chmod 755 go-whatsapp-multidevice
+./go-whatsapp-multidevice
 
 # Windows
 # You can double click it or using PowerShell
-.\go-whatsapp-multidevice-rest.exe
+.\go-whatsapp-multidevice.exe
 ```
 
-5) Now it should be accessible in your machine by accessing `localhost:3000/api/v1/whatsapp` or `127.0.0.1:3000/api/v1/whatsapp`
+5) Now it should be accessible in your machine by accessing `localhost:3100/api/v1/whatsapp` or `127.0.0.1:3100/api/v1/whatsapp`
 
-6) Try to use integrated API docs that accesible in `localhost:3000/api/v1/whatsapp/docs/` or `127.0.0.1:3000/api/v1/whatsapp/docs/`
+6) Try to use integrated API docs that accesible in `localhost:3100/api/v1/whatsapp/docs/` or `127.0.0.1:3100/api/v1/whatsapp/docs/`
 
 #### **Build From Source**
 
@@ -83,13 +83,13 @@ export GOPATH=$GOPATH:"`pwd`"
 
 2) Under the Go Workspace directory create a source directory
 ```sh
-mkdir -p src/github.com/dimaskiddo/go-whatsapp-multidevice-rest
+mkdir -p src/github.com/vpnvazar/go-whatsapp-multidevice
 ```
 
 3) Move to the created directory and pull codebase
 ```sh
-cd src/github.com/dimaskiddo/go-whatsapp-multidevice-rest
-git clone -b master https://github.com/dimaskiddo/go-whatsapp-multidevice-rest.git .
+cd src/github.com/vpnvazar/go-whatsapp-multidevice
+git clone -b master https://github.com/vpnvazar/go-whatsapp-multidevice.git .
 ```
 
 4) Run following command to pull vendor packages
@@ -119,15 +119,15 @@ make build
 make release
 ```
 
-9) Now it should be accessible in your machine by accessing `localhost:3000/api/v1/whatsapp` or `127.0.0.1:3000/api/v1/whatsapp`
+9) Now it should be accessible in your machine by accessing `localhost:3100/api/v1/whatsapp` or `127.0.0.1:3100/api/v1/whatsapp`
 
-10) Try to use integrated API docs that accesible in `localhost:3000/api/v1/whatsapp/docs/` or `127.0.0.1:3000/api/v1/whatsapp/docs/`
+10) Try to use integrated API docs that accesible in `localhost:3100/api/v1/whatsapp/docs/` or `127.0.0.1:3100/api/v1/whatsapp/docs/`
 
 ## API Access
 
 You can access any endpoint under **HTTP_BASE_URL** environment variable which by default located at `.env` file.
 
-Integrated API Documentation can be accessed in `<HTTP_BASE_URL>/docs/` or by default it's in `localhost:3000/api/v1/whatsapp/docs/` or `127.0.0.1:3000/api/v1/whatsapp/docs/`
+Integrated API Documentation can be accessed in `<HTTP_BASE_URL>/docs/` or by default it's in `localhost:3100/api/v1/whatsapp/docs/` or `127.0.0.1:3100/api/v1/whatsapp/docs/`
 
 ## Running The Tests
 
@@ -143,17 +143,17 @@ Currently the test is not ready yet :)
 
 ## Authors
 
-* **Dimas Restu Hidayanto** - *Initial Work* - [DimasKiddo](https://github.com/dimaskiddo)
+* **Nasim Mohammad Raju** - *Initial Work* - [Vpnbazzar](https://github.com/vpnvazar)
 
-See also the list of [contributors](https://github.com/dimaskiddo/go-whatsapp-multidevice-rest/contributors) who participated in this project
+See also the list of [contributors](https://github.com/vpnvazar/go-whatsapp-multidevice/contributors) who participated in this project
 
 ## Annotation
 
-You can seek more information for the make command parameters in the [Makefile](https://github.com/dimaskiddo/go-whatsapp-multidevice-rest/-/raw/master/Makefile)
+You can seek more information for the make command parameters in the [Makefile](https://github.com/vpnvazar/go-whatsapp-multidevice/-/raw/master/Makefile)
 
 ## License
 
-Copyright (C) 2022 Dimas Restu Hidayanto
+Copyright (C) 2022 Nasim Mohammad Raju
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
