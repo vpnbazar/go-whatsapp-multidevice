@@ -12,8 +12,8 @@ RUN go mod download \
 
 # Final Image
 # ---------------------------------------------------
-FROM dimaskiddo/alpine:base-glibc
-MAINTAINER Dimas Restu Hidayanto <dimas.restu@student.upi.edu>
+FROM vpnbazar/alpine:base-glibc
+MAINTAINER Nasim Mohammad Raju <md.rajusheikh.me@gmail.com>
 
 ARG SERVICE_NAME="gowam-rest"
 
