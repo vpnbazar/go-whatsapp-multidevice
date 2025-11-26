@@ -1,4 +1,4 @@
-module github.com/dimaskiddo/go-whatsapp-multidevice-rest
+module github.com/vpnvazar/go-whatsapp-multidevice
 
 go 1.25.4
 
