@@ -9,12 +9,12 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    image: 'dimaskiddo/go-whatsapp-multidevice-rest:latest'
-    container_name: 'go-whatsapp-multidevice-rest'
+    image: 'vpnvazar/go-whatsapp-multidevice:latest'
+    container_name: 'go-whatsapp-multidevice'
     networks:
       - whatsapp
     ports:
-      - 3000:3000
+      - 3100:3100
     env_file:
       - ./.env
     volumes:
